@@ -1,7 +1,17 @@
 import React from "react";
 
-const Home = () => {
-  return <div>Home</div>;
+interface Props {
+  name: string;
+  age: number;
+}
+
+const MyComponent: React.FC<Props> = ({ name, age }) => {
+  return (
+    <div>
+      <p>Nombre: {name}</p>
+      <p>Edad: {age}</p>
+    </div>
+  );
 };
 
-export default Home;
+export default MyComponent;
