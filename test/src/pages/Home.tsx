@@ -1,7 +1,12 @@
 import React from "react";
 
 const Home = () => {
-  return <div>new changes</div>;
+  return (
+    <div>
+      <p>Nombre: {name}</p>
+      <p>Edad: {age}</p>
+    </div>
+  );
 };
 
-export default Home;
+export default MyComponent;
